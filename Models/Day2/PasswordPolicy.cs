@@ -25,9 +25,7 @@ namespace AdventOfCode.Models.Day2
         public string Pattern { get; set; }
         public MatchVariables Vars { get; set; }        
 
-        /// <summary>
-        /// Subtract 1 from Match Variables b/c input values do not account for index 0  
-        /// </summary>        
+       
         public bool ValidByRange
         {
             get
@@ -36,6 +34,10 @@ namespace AdventOfCode.Models.Day2
             }
         }
 
+
+        /// <summary>
+        /// Subtract 1 from Match Variables b/c input values do not account for index 0  
+        /// </summary>        
         public bool ValidByIndex
         {
             get 
